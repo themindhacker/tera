@@ -114,7 +114,7 @@ export default function Home() {
       revalidateOnReconnect: false,
     }
   );
-  
+
   useEffect(() => {
     if (data || error) {
       setdisableInput(false);
@@ -138,7 +138,7 @@ export default function Home() {
       setError("Invalid Link");
       return;
     }
-    const secretKey = process.env.NEXT_PUBLIC_SECRET_KEY;
+    const secretKey = "1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d";
     if (!secretKey) {
       setError("Something went wrong");
       return;
